@@ -1,0 +1,110 @@
+// ----------------------------------------------
+//		how it works
+// ----------------------------------------------
+
+.how-it-works {
+  padding: 115px 0 90px 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    max-width: 680px;
+    line-height: inherit;
+    font-weight: inherit;
+    margin: 0 auto 70px auto;
+
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    padding: var(--section-padding) 0;
+  }
+  @media only screen and (max-width: 768px) {
+    text-align: left;
+  }
+}
+
+.works-details {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    top: 35px;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 0;
+    border-bottom: 1px dashed $accent-color;
+    z-index: -1;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    width: calc(100% / 12 * 3);
+
+    @media only screen and (max-width: 1200px) {
+      width: calc(100% / 12 * 4);
+    }
+    @media only screen and (max-width: 768px) {
+      width: auto;
+    }
+
+    &:nth-child(even) > .works-details__num {
+      color: #fefeff;
+      border: none;
+      background-image: $accent-gradient;
+    }
+  }
+
+  &__num {
+    display: inline-block;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    margin-bottom: 25px;
+    color: $accent-color;
+    font-size: 24px;
+    line-height: 70px;
+    background-color: #fff;
+    border: 1px dashed $accent-color;
+    border-radius: 50%;
+
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    @media only screen and (max-width: 768px) {
+      display: inline-block;
+      margin-left: 25px;
+    }
+  }
+
+  &__text {
+    margin: 0 auto;
+    padding: 0 10px;
+
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}

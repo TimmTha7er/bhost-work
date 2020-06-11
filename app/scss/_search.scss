@@ -1,0 +1,211 @@
+// ----------------------------------------------
+//		search
+// ----------------------------------------------
+.search {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 115px 0 105px 0;
+  background-color: rgb(38, 53, 69);
+  z-index: 1;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    object-fit: scale-down;
+    object-position: center center;
+    z-index: -1;
+  }
+
+  &__container {
+    width: 570px;
+
+    @media only screen and (max-width: 768px) {
+      width: auto;
+    }
+  }
+
+  &__offer {
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    padding: var(--section-padding) 0;
+  }
+}
+
+.search-form {
+  &__input {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 19px 145px 19px 58px;
+    line-height: 1;
+    border-radius: 50px;
+    border: 2px solid rgb(0, 174, 239);
+    outline: none;
+
+    &::placeholder {
+      color: #616161;
+      opacity: 0.7;
+    }
+
+    @media only screen and (max-width: 768px) {
+      padding-right: 70px;
+    }
+  }
+
+  &__wrap {
+    display: block;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 17px;
+      left: 29px;
+      font-size: 16px;
+      color: #616161;
+      opacity: 0.7;
+    }
+
+    &::after {
+      position: absolute;
+      top: 18px;
+      right: 40px;
+      content: 'search';
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 0.75px;
+      pointer-events: none;
+
+      @media only screen and (max-width: 768px) {
+        content: '\e807';
+        font-family: 'fontello';
+        right: 22px;
+        top: 16px;
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    width: 130px;
+    height: 44px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: $accent-gradient;
+    transition: box-shadow 0.25s ease;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+    }
+
+    &:active {
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.35);
+    }
+
+    @media only screen and (max-width: 768px) {
+      top: 2px;
+      right: 2px;
+      height: 58px;
+      width: 55px;
+      border-radius: 0 30px 30px 0;
+    }
+  }
+
+  &__checkbox-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 490px;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 480px) {
+      flex-wrap: wrap;
+      max-width: 230px;
+      margin: 0 auto;
+    }
+  }
+
+  &__checkbox-item {
+    margin-bottom: 10px;
+
+    @media only screen and (max-width: 480px) {
+      text-align: left;
+      width: 50%;
+    }
+  }
+
+  // input
+  &__checkbox {
+    position: absolute;
+    appearance: none;
+    // IE11
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    //  при наведении курсора на checkbox
+    &:not(:disabled):not(:checked) + label:hover::before {
+      border-color: #275efe;
+    }
+    /* для активного чекбокса (при нажатии на него) */
+    &:not(:disabled):active + label::before {
+      border-color: #b3d7ff;
+    }
+    /* для чекбокса, находящегося в фокусе */
+    &:focus + label::before {
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    /* для чекбокса, находящегося в фокусе и 
+       не находящегося в состоянии checked */
+    &:focus:not(:checked) + label::before {
+      border-color: #80bdff;
+    }
+    /* для чекбокса, находящегося в состоянии checked */
+    &:checked + label::before {
+      border-color: #275efe;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    }
+    /* стили для чекбокса, находящегося в состоянии disabled */
+    &:disabled + label::before {
+      background-color: #e9ecef;
+    }
+  }
+
+  // label
+  &__label {
+    user-select: none;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      margin-right: 9px;
+      border: 1px solid $accent-color;
+      transition: border 0.25s ease;
+    }
+  }
+}

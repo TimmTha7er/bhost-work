@@ -1,0 +1,96 @@
+// ----------------------------------------------
+//		facts
+// ----------------------------------------------
+.facts {
+  position: relative;
+  background: $accent-gradient;
+  padding: 180px 0 175px 0;
+  z-index: 1;
+
+  @media only screen and (max-width: 768px) {
+    padding: 60px 0;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    object-fit: cover;
+    object-position: top left;
+    z-index: -1;
+  }
+
+  &__item-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    @media only screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    width: 25%;
+
+    @media only screen and (max-width: 768px) {
+      width: 50%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    height: 65px;
+    width: 85px;
+
+    &::before {
+      position: absolute;
+      top: 4px;
+      left: 26px;
+      font-size: 32px;
+      color: $accent-color;
+      z-index: 1;
+    }
+    &::after {
+      position: absolute;
+      content: '\e806';
+      left: 0;
+      bottom: -41px;
+      font-size: 79px;
+      color: #fff;
+    }
+  }
+
+  &__descr {
+    color: #fff;
+  }
+
+  &__count {
+    font-size: 40px;
+    line-height: 1.65;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 35px;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: inherit;
+    font-weight: normal;
+    margin: 0;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    padding: var(--section-padding) 0;
+  }
+}

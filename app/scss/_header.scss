@@ -1,0 +1,457 @@
+// ----------------------------------------------
+//		header
+// ----------------------------------------------
+.header {
+  position: relative;
+  background: $accent-gradient;
+  text-align: center;
+  z-index: 1;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    object-fit: cover;
+    object-position: bottom right;
+    z-index: -1;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__top-line {
+    margin-bottom: 14px;
+
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__main-title {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    transition: box-shadow 0.25s ease;
+
+    &:hover {
+      color: white;
+      box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__controls-btns {
+    position: absolute;
+    top: 435px;
+    right: -160px;
+
+    @media only screen and (max-width: 1500px) {
+      top: 395px;
+      right: 70px;
+    }
+    @media only screen and (max-width: 992px) {
+      top: 335px;
+      right: 0px;
+    }
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+// ----------------------------------------------
+//		top line
+// ----------------------------------------------
+.top-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0 4px 0;
+  border-bottom: 1px solid #6f85cd;
+
+  @media only screen and (max-width: 480px) {
+    justify-content: space-around;
+  }
+}
+
+.header-contacts {
+  @media only screen and (max-width: 768px) {
+    text-align: left;
+  }
+
+  &__link {
+    font-size: 12px;
+
+    &::before {
+      padding-right: 14px;
+    }
+
+    &:not(:first-child) {
+      padding-left: 40px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+
+      &:not(:first-child) {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.user-bar {
+  &__item {
+    position: relative;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;
+    transition: background-color 0.25s ease;
+
+    &:hover {
+      background-color: $accent-color;
+
+      &::before {
+        color: #fff;
+      }
+    }
+
+    &:active {
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.55);
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      color: $accent-color;
+      transition: color 0.25s ease;
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+      margin-top: 12px;
+    }
+  }
+}
+
+// ----------------------------------------------
+//		menu line
+// ----------------------------------------------
+.menu-line {
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 480px) {
+    justify-content: space-around;
+  }
+
+  &__logo {
+    margin-top: 5px;
+  }
+
+  &__main-menu {
+    padding-top: 15px;
+
+    @media only screen and (max-width: 992px) {
+      position: absolute;
+      top: 55px;
+      left: 0;
+    }
+    @media only screen and (max-width: 768px) {
+      top: 140px;
+    }
+  }
+
+  &__toggle {
+    position: relative;
+    right: 10px;
+    top: 18px;
+    display: none;
+
+    @media only screen and (max-width: 992px) {
+      display: flex;
+    }
+  }
+}
+
+.main-menu {
+  &__link {
+    font-size: 14px;
+    padding-left: 52px;
+    text-transform: uppercase;
+
+    &_active {
+      color: $accent-color;
+    }
+
+    @media only screen and (max-width: 992px) {
+      display: block;
+      position: relative;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      padding-left: 0;
+      padding: 15px 0;
+      background-color: rgba(26, 26, 26, 0.9);
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0),
+          #2fa2e5 50%,
+          rgba(255, 255, 255, 0)
+        );
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+    text-align: center;
+    max-height: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    transition: max-height 0.55s ease;
+
+    &_active {
+      max-height: 100%;
+    }
+  }
+}
+
+// ----------------------------------------------
+//		dropdown menu button
+// ----------------------------------------------
+.toggle-menu {
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1;
+
+  &__line {
+    position: relative;
+    background-color: #fff;
+    width: 30px;
+    height: 4px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 30px;
+      height: 4px;
+      background-color: #fff;
+      transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+
+    &::before {
+      top: -10px;
+      content: '';
+    }
+    &::after {
+      top: 10px;
+    }
+
+    &_active {
+      background-color: transparent;
+
+      &::before,
+      &::after {
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+// ----------------------------------------------
+//		header body
+// ----------------------------------------------
+.header-body {
+  position: relative;
+  padding: 180px 0 210px 0;
+
+  &__slider-wrap {
+    margin: 0 auto 60px auto;
+  }
+
+  &__social {
+    position: absolute;
+    top: 270px;
+    left: 0;
+
+    @media only screen and (max-width: 1200px) {
+      top: 230px;
+    }
+    @media only screen and (max-width: 992px) {
+      top: 190px;
+    }
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    padding: var(--big-section-padding) 0;
+  }
+}
+
+.header-social {
+  &__btn {
+    display: block;
+    margin-bottom: 12px;
+
+    &::before {
+      font-size: 16px;
+      transition: color 0.25s ease;
+    }
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+
+      &::before {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+// ----------------------------------------------
+//		header-pricing, offer cards
+// ----------------------------------------------
+.header-pricing {
+  max-width: 505px;
+  overflow: hidden;
+
+  @media only screen and (max-width: 767px) {
+    max-width: 320px;
+  }
+  @media only screen and (max-width: 479px) {
+    max-width: 100px;
+  }
+
+  &__slider {
+    display: flex;
+  }
+}
+
+.offer-card {
+  font-weight: 700;
+  color: #fff;
+  user-select: none;
+  cursor: pointer;
+  padding-right: 105px;
+
+  &__img {
+    opacity: 0.5;
+  }
+
+  &__header {
+    position: relative;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    position: absolute;
+    font-size: 30px;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &::before {
+      font-size: inherit;
+    }
+  }
+
+  &__descr {
+    width: 100px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.65;
+    margin: 0;
+  }
+}
+
+// ----------------------------------------------
+//		slider control buttons
+// ----------------------------------------------
+.header-controls-btns {
+  &__next,
+  &__prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+    background-color: rgba(26, 26, 26, 0.24);
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    transition: background-color 0.25s ease;
+
+    &::before {
+      font-size: 16px;
+      transition: color 0.25s ease;
+    }
+
+    &:hover {
+      background-color: rgba(26, 26, 26, 0.1);
+
+      &::before {
+        color: $accent-color;
+      }
+    }
+
+    &:active {
+      box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  &__prev {
+    margin-bottom: 2px;
+  }
+}
+
+.tns-item {
+  padding-right: 0;
+}

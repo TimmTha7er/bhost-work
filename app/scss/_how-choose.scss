@@ -1,0 +1,126 @@
+// ----------------------------------------------
+//		how choose
+// ----------------------------------------------
+.how-choose {
+  padding: 115px 0 105px 0;
+
+  &__container {
+    width: 1030px;
+
+    @media only screen and (max-width: 1200px) {
+      width: auto;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    padding: var(--section-padding) 0;
+  }
+}
+
+.tabs {
+  &__input {
+    display: none;
+  }
+
+  &__list {
+    margin-bottom: 45px;
+    background-color: #f9f9f9;
+
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__link {
+    color: #333333;
+    padding: 16px 42px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+
+    background-image: $accent-gradient;
+    background-size: 0 100%;
+    background-repeat: repeat-y;
+    transition: color 0.25s ease 0.1s, background-size 0.15s ease;
+
+    &:hover {
+      color: $accent-color;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      padding: 16px 37px;
+    }
+    @media only screen and (max-width: 992px) {
+      padding: 16px 19px;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 50%;
+    }
+  }
+  
+  &__block {
+    display: none;
+  }
+
+  &__title {
+    font-size: 20px;
+    text-transform: none;
+    margin-bottom: 25px;
+  }
+  
+  &__text {
+    max-width: 640px;
+    margin: 10px 0;
+
+    @media only screen and (max-width: 992px) {
+      max-width: none;
+    }
+  }
+
+  &__img-wrap {
+    max-width: 340px;
+    overflow: hidden;
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+    @media only screen and (max-width: 768px) {
+      max-width: 300px;
+    }
+    @media only screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+}
+
+#how-choose-tab-1:checked ~ .tabs__body .how-choose-tab-1,
+#how-choose-tab-2:checked ~ .tabs__body .how-choose-tab-2,
+#how-choose-tab-3:checked ~ .tabs__body .how-choose-tab-3,
+#how-choose-tab-4:checked ~ .tabs__body .how-choose-tab-4,
+#how-choose-tab-5:checked ~ .tabs__body .how-choose-tab-5,
+#how-choose-tab-6:checked ~ .tabs__body .how-choose-tab-6 {
+  display: block;
+}
+
+#how-choose-tab-1:checked ~ .tabs__list label[for="how-choose-tab-1"],
+#how-choose-tab-2:checked ~ .tabs__list label[for="how-choose-tab-2"],
+#how-choose-tab-3:checked ~ .tabs__list label[for="how-choose-tab-3"],
+#how-choose-tab-4:checked ~ .tabs__list label[for="how-choose-tab-4"],
+#how-choose-tab-5:checked ~ .tabs__list label[for="how-choose-tab-5"],
+#how-choose-tab-6:checked ~ .tabs__list label[for="how-choose-tab-6"] {
+  background-size: 100% 100%;
+  color: #fff;
+}
+

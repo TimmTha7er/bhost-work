@@ -1,0 +1,202 @@
+// ----------------------------------------------
+//		subscribe
+// ----------------------------------------------
+.subscribe {
+  padding: 115px 0 120px 0;
+  background-image: $accent-gradient;
+  color: #fff;
+  text-align: center;
+
+  &__header {
+    max-width: 775px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 3.9px;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+  }
+
+  &__body {
+    position: relative;
+  }
+
+  &__contact-card {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media only screen and (max-width: 1200px) {
+      right: 10px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      position: static;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    padding: var(--section-padding) 0;
+  }
+}
+
+.subscribe-form {
+  &__input {
+    width: 100%;
+    padding: 19px 210px 19px 30px;
+    border-radius: 5px;
+    line-height: 1;
+    border: none;
+    outline: none;
+    
+    &::placeholder {
+      color: #333;
+      opacity: 0.7;
+      letter-spacing: 1.5px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      padding-right: 65px;
+    }
+  }
+
+  &__wrap {
+    display: block;
+    position: relative;
+    max-width: 675px;
+    margin-left: 50px;
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      top: 16px;
+      left: 40px;
+      color: #616161;
+      font-size: 22px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      margin-left: 0;
+      max-width: 610px;
+    }
+    @media only screen and (max-width: 992px) {
+      margin-bottom: 25px;
+      max-width: none;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 190px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: $accent-color;
+    transition: box-shadow 0.25s ease;
+
+    &:hover {
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
+    }
+
+    &:active {
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.55);
+    }
+
+    @media only screen and (max-width: 768px) {
+      width: 45px;
+    }
+  }
+}
+
+.contact-card {
+  box-shadow: 0 0 25px rgba(198, 198, 198, 0.25);
+  background-color: #fff;
+  color: #333;
+  max-width: 370px;
+  padding: 54px 92px;
+  
+  @media only screen and (max-width: 1200px) {
+    padding: 34px 72px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 10px 0;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: none;
+  }
+	
+  &__icon {
+		position: relative;
+		margin-bottom: 15px;
+
+    &::before {
+      position: absolute;
+      left: 21px;
+      top: 9px;
+      font-size: 24px;
+      z-index: 1;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-color: #00aeef;
+      border-radius: 50%;
+    }
+  }
+
+  &__title {
+		margin-bottom: 10px;
+  }
+
+  &__subtitle {
+		margin-bottom: 15px;
+  }
+
+  &__phone {
+		font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 45px;
+    margin-top: 0;
+  }
+  
+  &__button {
+		font-size: 20px;
+    font-weight: 600;
+    border-radius: 2px;
+    padding: 10px 16px;
+    transition: box-shadow 0.25s ease;
+    
+    &:hover {
+      color: #fff;
+      box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.35);
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+}

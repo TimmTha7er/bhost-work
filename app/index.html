@@ -1,0 +1,3082 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <title>BHOST</title>
+  <meta name="author" content="Chris Mills" />
+  <meta
+    name="description"
+    content="BHOST are a website hosting service. Without the best web hosting, your ability to run a successful website is going to be seriously hindered. We are experienced, last 15 years we lead the world in hosting service. "
+  />
+  <meta name="keywords" content="BHOST, hosting, website, hosting service" />
+
+  <!-- favicon https://realfavicongenerator.net/ -->
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="img/favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="img/favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="194x194"
+    href="img/favicon/favicon-194x194.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="192x192"
+    href="img/favicon/android-chrome-192x192.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="img/favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="img/favicon/site.webmanifest" />
+  <link
+    rel="mask-icon"
+    href="img/favicon/safari-pinned-tab.svg"
+    color="#4654c4"
+  />
+  <meta name="apple-mobile-web-app-title" content="BHOST" />
+  <meta name="application-name" content="BHOST" />
+  <meta
+    name="msapplication-TileImage"
+    content="img/favicon/mstile-144x144.png"
+  />
+  <meta name="msapplication-config" content="img/favicon/browserconfig.xml" />
+
+  <!-- IE color -->
+  <meta name="msapplication-navbutton-color" content="#FF3300" />
+  <meta name="msapplication-TileColor" content="#2b5797" />
+  <!-- Chrome, Firefox OS and Opera color -->
+  <meta name="theme-color" content="#000000" />
+  <!-- Sofari color -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <!-- yandex color -->
+  <meta name="viewport" content="ya-title=fade,ya-dock=fade" />
+  <!-- / favicon -->
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="BHOST are a website hosting service." />
+  <meta property="og:site_name" content="BHOST" />
+  <meta property="og:url" content="https://BHOST.com/" />
+  <meta
+    property="og:description"
+    content="Without the best web hosting, your ability to run a successful website is going to be seriously hindered. We are experienced, last 15 years we lead the world in hosting service."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/favicon/open-graph.jpg" />
+  <!-- / Open Graph -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+
+  <body>
+    <header class="header" id="header">
+  <picture>
+    <source
+      srcset="
+        /img/header/header-bg.webp    1x,
+        /img/header/header-bg@2x.webp 2x
+      "
+      type="image/webp"
+    />
+    <img
+      class="header__bg"
+      srcset="/img/header/header-bg@2x.jpg 2x"
+      src="/img/header/header-bg.jpg"
+      alt="header bg"
+    />
+  </picture>
+
+  <div class="container header__container">
+    <!-- top line -->
+    <div class="top-line header__top-line">
+      <div class="header-contacts">
+        <a class="header-contacts__link icon icon-commenting link" href="#"
+          >Live Chat</a
+        >
+        <a class="header-contacts__link icon icon-phone link" href="#"
+          >+91 254 878 547</a
+        >
+        <a class="header-contacts__link icon icon-mail link" href="#"
+          >yourmail@info.com</a
+        >
+      </div>
+      <div class="user-bar">
+        <a class="user-bar__item icon icon-basket link" href="#"> </a>
+        <a class="user-bar__item icon icon-user-o link" href="#"></a>
+      </div>
+    </div>
+    <!-- top line -->
+
+    <!-- menu line -->
+    <div class="menu-line">
+      <a class="menu-line__logo logo link" href="#">
+        <div class="main-logo">
+          <img
+            class="main-logo__img"
+            src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAAvCAQAAAARQrHxAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkBBYONjUUwiXrAAAC1klEQVRYw82Y30uTURzGH9cSGxlKBfbDqReCDiqJCLEIDLuIuoxuC4yRV3nRhRWEERGEUHcS5B9QEUUZyCZEBBY58aIoQgqsdVFQiastJ+7pYu+O77tztvf1nHfacy72nu95vuez99053/cwMMwYU4wxTIjmRbMcYZctR6OBcWuyZyuEF7JaTeApa5oFLTj5iz268ABeIa8J6KkOT3FQM5dhxvmbcTZp3nn+99+o99h1m1MX9B67Pzqqk+QXvGot4Vr6j+BhxJBCDGFbrORS9UGOGfWr3Qud1R50fJNO67PL6H66cQ8hBDCPJN7iDZ5jCrnVuvNjiiI0yM1uRUa/2pWHk2SKl7i+MhXOHU6SU2yuRIXzpr2YRMdyd7X3+RbE0LZWcGArHiC0VnAggiE3uFu1M1EUu6T5DPa8vNon2MY9PM9Zpf9h+a22srOdDB+1eiGOKPyLDJfbaqZnu4LS6MWwFA3iTLnfvBfj+INxnDaEA0A/ElLsBIpeLHZ9xhEpZj+vrGTJZdGH10WnnXY0Vm6rdWMavaKXQFxyHKgcPIQO3EGf6N+XHB2VLjLnxNWkNBapNLxJXP2Qx7zBVdXOqU0l4svIemmswdu7273a5dgiRmo5I+K3RfSUVGgy3uBeqt2QbWw7H/EbE4yySsQeSxnTft05mXEcvorbbi5JGTe9wb2d7cYYKJFfzZcK/yH9M9ySYrprJbw3FN6vDOjD7yrfbrdYrfAeVzgvmpxe27moxM/wLButZbdTuEeLXHOsM4GrH2ZBWWZJfmDQ8rYw4xi/QpjBQ3xHN0WFe9AW/cgNpnAwwjkXeDKPIVjDT1ZsgZ35mBkcPMy/LviBomWXY18hYgoHe0T9U+sn64X3CXPsX841h4MRvi+Lvy6czTxpz/QDDtbwKtMl4WnuUOf5AwfBbbzMZAn8sDqnyp8/Vyytw370YB9a0YBaZDCPL0hgEmP4rrL/A+my6dWJ3x0lAAAAAElFTkSuQmCC"
+            alt="BHOST"
+          />
+          <div class="main-logo__company-name main-logo__company-name_white">
+            BHOST
+          </div>
+        </div>
+      </a>
+      <nav class="main-menu menu-line__main-menu">
+        <a class="main-menu__link main-menu__link_active link" href="#">home</a>
+        <a class="main-menu__link link" href="#how-it-works">hosting</a>
+        <a class="main-menu__link link" href="#services">services</a>
+        <a class="main-menu__link link" href="#pricing">pricing</a>
+        <a class="main-menu__link link" href="#footer">contact</a>
+      </nav>
+
+      <div class="menu-line__toggle toggle-menu">
+        <div class="toggle-menu__line"></div>
+      </div>
+    </div>
+    <!-- menu line -->
+
+    <!-- header body -->
+    <div class="header-body">
+      <div class="header-social header-body__social">
+        <a href="#" class="header-social__btn icon icon-twitter link"></a>
+        <a href="#" class="header-social__btn icon icon-facebook link"></a>
+        <a href="#" class="header-social__btn icon icon-linkedin link"></a>
+        <a href="#" class="header-social__btn icon icon-skype link"></a>
+      </div>
+
+      <h1 class="header__main-title">
+        build your web site with&nbsp;bhost
+      </h1>
+
+      <div class="header-pricing header-body__slider-wrap">
+        <div class="header-slider header-pricing__slider">
+          <div class="header-pricing__item offer-card">
+            <div class="offer-card__header">
+              <img
+                class="offer-card__img"
+                src="/img/header/polygon.svg"
+                alt=""
+              />
+              <div class="offer-card__price">40%</div>
+            </div>
+            <p class="offer-card__descr">
+              save money more then 40%
+            </p>
+          </div>
+          <div class="header-pricing__item offer-card">
+            <div class="offer-card__header">
+              <img
+                class="offer-card__img"
+                src="/img/header/polygon.svg"
+                alt=""
+              />
+              <div class="offer-card__price">$1.3</div>
+            </div>
+            <p class="offer-card__descr">
+              starting at $1.45/year
+            </p>
+          </div>
+          <div class="header-pricing__item offer-card">
+            <div class="offer-card__header">
+              <img
+                class="offer-card__img"
+                src="/img/header/polygon.svg"
+                alt=""
+              />
+              <div class="offer-card__price icon icon-lifebuoy"></div>
+            </div>
+            <p class="offer-card__descr">
+              support 24/7&nbsp;days
+            </p>
+          </div>
+          <div class="header-pricing__item offer-card">
+            <div class="offer-card__header">
+              <img
+                class="offer-card__img"
+                src="/img/header/polygon.svg"
+                alt=""
+              />
+              <div class="offer-card__price">40%</div>
+            </div>
+            <p class="offer-card__descr">
+              save money more then 40%
+            </p>
+          </div>
+          <div class="header-pricing__item offer-card">
+            <div class="offer-card__header">
+              <img
+                class="offer-card__img"
+                src="/img/header/polygon.svg"
+                alt=""
+              />
+              <div class="offer-card__price">$1.3</div>
+            </div>
+            <p class="offer-card__descr">
+              starting at $1.45/year
+            </p>
+          </div>
+          <div class="header-pricing__item offer-card">
+            <div class="offer-card__header">
+              <img
+                class="offer-card__img"
+                src="/img/header/polygon.svg"
+                alt=""
+              />
+              <div class="offer-card__price icon icon-lifebuoy"></div>
+            </div>
+            <p class="offer-card__descr">
+              support 24/7&nbsp;days
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="header__button button link">get started</a>
+    </div>
+    <!-- header body -->
+    <div class="header-controls-btns header__controls-btns">
+      <div class="header-controls-btns__prev icon icon-left-open"></div>
+      <div class="header-controls-btns__next icon icon-right-open"></div>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <section class="about" id="about">
+  <div class="container about__container">
+    <div class="about__content">
+      <div class="about__descr">
+        <h3 class="about__title">experienced we are!</h3>
+        <p class="about__text">
+          Without the best web hosting, your ability to run a successful website
+          is going to be seriously hindered. There is a dizzying array of web
+          hosting providers competing for your business.
+        </p>
+        <p class="about__text">
+          We are experienced, last 15 years we lead the world in hosting
+          service. if you need any hosting services? we are eagerly wating for
+          you
+        </p>
+      </div>
+      <div class="about-slider about__experience experience">
+        <div class="experience__item">
+          <div
+            class="experience__icon_hosted experience__icon icon icon-ioxhost"
+          ></div>
+          <div class="experience__descr">
+            <h3 class="experience__title">website hosted</h3>
+            <p class="experience__text">90000+</p>
+          </div>
+        </div>
+        <div class="experience__item">
+          <div
+            class="experience__icon_registered experience__icon icon icon-registered"
+          ></div>
+          <div class="experience__descr">
+            <h4 class="experience__title">website registered</h4>
+            <p class="experience__text">150000+</p>
+          </div>
+        </div>
+        <div class="experience__item">
+          <div
+            class="experience__icon_customer experience__icon icon icon-user-o"
+          ></div>
+          <div class="experience__descr">
+            <h4 class="experience__title">happy customer</h4>
+            <p class="experience__text">49000+</p>
+          </div>
+        </div>
+        <div class="experience__item">
+          <div
+            class="experience__icon_data experience__icon icon icon-database"
+          ></div>
+          <div class="experience__descr">
+            <h4 class="experience__title">data tramsfered</h4>
+            <p class="experience__text">80542+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about__wrap-img">
+      <picture>
+        <source
+          srcset="
+            /img/about/about.webp    1x,
+            /img/about/about@2x.webp 2x,
+            /img/about/about@3x.webp 3x
+          "
+          type="image/webp"
+        />
+        <img
+          class="about__img"
+          srcset="/img/about/about@2x.jpg 2x, /img/about/about@3x.jpg 3x"
+          src="/img/about/about.jpg"
+          alt="about"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+ 
+      <section class="search" id="search">
+  <picture>
+    <source srcset="/img/search/search-bg.webp" type="image/webp" />
+    <img
+      class="search__bg"
+      src="/img/search/search-bg.png"
+      alt="search bg"
+    />
+  </picture>
+  <div class="container search__container">
+    <h2 class="search__title">
+      find your domain name
+    </h2>
+    <p class="search__offer">starting from $1.65 per your!</p>
+    <form action="#" enctype="multipart/form-data" class="search-form">
+      <div class="search-form__wrap icon icon-search">
+        <input
+          class="search-form__input"
+          type="search"
+          placeholder="eg.search.com"
+          name="search"
+        />
+        <input class="search-form__btn" type="submit" value="" />
+      </div>
+      <div class="search-form__checkbox-list">
+        <div class="search-form__checkbox-item">
+          <input
+            class="search-form__checkbox"
+            type="checkbox"
+            value=".com / $3"
+            name=".com"
+            id="com"
+          />
+          <label for="com" class="search-form__label">
+            .com / $3
+          </label>
+        </div>
+
+        <div class="search-form__checkbox-item">
+          <input
+            class="search-form__checkbox"
+            type="checkbox"
+            value=".org / $2"
+            name=".org"
+            id="org"
+          />
+          <label for="org" class="search-form__label">
+            .org / $2
+          </label>
+        </div>
+        <div class="search-form__checkbox-item">
+          <input
+            class="search-form__checkbox"
+            type="checkbox"
+            value=".net / $2"
+            name=".net"
+            id="net"
+          />
+          <label for="net" class="search-form__label">
+            .net / $2
+          </label>
+        </div>
+        <div class="search-form__checkbox-item">
+          <input
+            class="search-form__checkbox"
+            type="checkbox"
+            value=".edu / $2"
+            name=".edu"
+            id="edu"
+          />
+          <label for="edu" class="search-form__label">
+            .edu / $2
+          </label>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+      <section class="how-it-works" id="how-it-works">
+  <div class="container">
+    <h2 class="how-it-works__title">How to build your website ?</h2>
+    <h5 class="how-it-works__subtitle">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod teor invidunt ut abore et dolore magnaLorem ipsum dolor sit amet,
+      lorem ipsum dollar.
+    </h5>
+    <div class="works-details">
+      <div class="works-details__item">
+        <div class="works-details__num">1</div>
+        <h3 class="works-details__title">domain</h3>
+        <p class="works-details__text">
+          Find the Perfect web Hosting Package for You, best hosting services.
+          Join now and get free domain !
+        </p>
+      </div>
+      <div class="works-details__item">
+        <div class="works-details__num">2</div>
+        <h3 class="works-details__title">hosting</h3>
+        <p class="works-details__text">
+          Website hosting services are basically the plot of internet land that
+          your website storefront sits on.
+        </p>
+      </div>
+      <div class="works-details__item">
+        <div class="works-details__num">3</div>
+        <h3 class="works-details__title">website</h3>
+        <p class="works-details__text">
+          Customers can access and see it when they type your url. different
+          types of hosting services that cater to the varying types of
+          businesses.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="services" id="services">
+  <div class="container">
+    <h2 class="services__title">
+      What makes our Wordpress hosting is Best?
+    </h2>
+    <h5 class="services__subtitle">
+      We'll help you find the right blend of our technologies and service
+      expertise to power your enterprise performance. Join Bhost now and get a
+      free domain name!
+    </h5>
+    <div class="services-list">
+      <div class="services-list__item">
+        <div class="services-list__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="65px"
+            height="60px"
+          >
+            <defs>
+              <linearGradient
+                id="lg1"
+                x1="0%"
+                x2="70.711%"
+                y1="70.711%"
+                y2="0%"
+              >
+                <stop
+                  offset="0%"
+                  stop-color="rgb(49,170,226)"
+                  stop-opacity="1"
+                ></stop>
+                <stop
+                  offset="100%"
+                  stop-color="rgb(157,53,192)"
+                  stop-opacity="1"
+                ></stop>
+              </linearGradient>
+            </defs>
+
+            <text
+              kerning="auto"
+              fill="url(#lg1)"
+              font-size="60px"
+              x="0px"
+              y="52px"
+            >
+              <tspan font-size="60px" font-family="fontello" fill="url(#lg1)">
+                &#61705;
+              </tspan>
+            </text>
+          </svg>
+        </div>
+
+        <h4 class="services-list__title">instant setup</h4>
+        <p class="services-list__text">
+          Compress deployment time, protect high-value content,and speed up your
+          site 5x on average.
+        </p>
+      </div>
+      <div class="services-list__item">
+        <div class="services-list__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="60px"
+            height="60px"
+          >
+            <defs>
+              <linearGradient
+                id="lg2"
+                x1="0%"
+                x2="70.711%"
+                y1="70.711%"
+                y2="0%"
+              >
+                <stop
+                  offset="0%"
+                  stop-color="rgb(49,170,226)"
+                  stop-opacity="1"
+                ></stop>
+                <stop
+                  offset="100%"
+                  stop-color="rgb(157,53,192)"
+                  stop-opacity="1"
+                ></stop>
+              </linearGradient>
+            </defs>
+
+            <text
+              kerning="auto"
+              fill="url(#lg2)"
+              font-size="60px"
+              x="10px"
+              y="52px"
+            >
+              <tspan font-size="60px" font-family="fontello" fill="url(#lg2)">
+                &#59397;
+              </tspan>
+            </text>
+          </svg>
+        </div>
+
+        <h4 class="services-list__title">account isolation</h4>
+        <p class="services-list__text">
+          Compress deployment time, protect high-value content,and speed up your
+          site 5x on average.
+        </p>
+      </div>
+      <div class="services-list__item">
+        <div class="services-list__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="60px"
+            height="60px"
+          >
+            <defs>
+              <linearGradient
+                id="lg3"
+                x1="0%"
+                x2="70.711%"
+                y1="70.711%"
+                y2="0%"
+              >
+                <stop
+                  offset="0%"
+                  stop-color="rgb(49,170,226)"
+                  stop-opacity="1"
+                ></stop>
+                <stop
+                  offset="100%"
+                  stop-color="rgb(157,53,192)"
+                  stop-opacity="1"
+                ></stop>
+              </linearGradient>
+            </defs>
+
+            <text
+              kerning="auto"
+              fill="url(#lg3)"
+              font-size="60px"
+              x="5px"
+              y="52px"
+            >
+              <tspan font-size="60px" font-family="fontello" fill="url(#lg3)">
+                &#61920;
+              </tspan>
+            </text>
+          </svg>
+        </div>
+
+        <h4 class="services-list__title">shared hosting plans</h4>
+        <p class="services-list__text">
+          Compress deployment time, protect high-value content,and speed up your
+          site 5x on average.
+        </p>
+      </div>
+      <div class="services-list__item">
+        <div class="services-list__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="60px"
+            height="60px"
+          >
+            <defs>
+              <linearGradient
+                id="lg4"
+                x1="0%"
+                x2="70.711%"
+                y1="70.711%"
+                y2="0%"
+              >
+                <stop
+                  offset="0%"
+                  stop-color="rgb(49,170,226)"
+                  stop-opacity="1"
+                ></stop>
+                <stop
+                  offset="100%"
+                  stop-color="rgb(157,53,192)"
+                  stop-opacity="1"
+                ></stop>
+              </linearGradient>
+            </defs>
+
+            <text
+              kerning="auto"
+              fill="url(#lg4)"
+              font-size="60px"
+              x="0px"
+              y="51px"
+            >
+              <tspan font-size="60px" font-family="fontello" fill="url(#lg4)">
+                &#61901;
+              </tspan>
+            </text>
+          </svg>
+        </div>
+
+        <h4 class="services-list__title">live chat support</h4>
+        <p class="services-list__text">
+          Compress deployment time, protect high-value content,and speed up your
+          site 5x on average.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Заменить background-clip : text на svg -->
+      <section class="pricing" id="pricing">
+  <div class="container pricing__container">
+    <h2 class="pricing__title">Choose your package</h2>
+    <p class="pricing__text">
+      Find the Perfect Hosting Package for You, Get the Best Web Hosting Deals
+      Today! Bhost is one of the best web hosting services. Join Bhost now and
+      get a free domain name!
+    </p>
+    <h3 class="pricing__subtitle">Startup hosting package</h3>
+    <div class="pricing-slider">
+      <div class="pricing-slider__item-wrap">
+        <div class="pricing-slider__item">
+          <div class="pricing-info">
+            <div class="pricing-info__header">
+              <div class="pricing-info__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <linearGradient
+                      id="pricing-lg1"
+                      x1="0%"
+                      x2="70.711%"
+                      y1="70.711%"
+                      y2="0%"
+                    >
+                      <stop
+                        offset="0%"
+                        stop-color="rgb(49,170,226)"
+                        stop-opacity="1"
+                      ></stop>
+                      <stop
+                        offset="100%"
+                        stop-color="rgb(157,53,192)"
+                        stop-opacity="1"
+                      ></stop>
+                    </linearGradient>
+                  </defs>
+
+                  <text
+                    kerning="auto"
+                    fill="url(#pricing-lg1)"
+                    font-size="120px"
+                    x="0px"
+                    y="95px"
+                  >
+                    <tspan
+                      font-size="120px"
+                      font-family="fontello"
+                      fill="url(#pricing-lg1)"
+                    >
+                      &#59398;
+                    </tspan>
+                  </text>
+                </svg>
+              </div>
+              <div class="offer-list">
+                <span class="offer-list__item icon icon-ok">1 Website</span>
+                <span class="offer-list__item icon icon-ok"
+                  >100 GB Storage</span
+                >
+                <span class="offer-list__item icon icon-ok"
+                  >Unlimited Bandwidth</span
+                >
+                <span class="offer-list__item icon icon-ok"
+                  >For up to 10 Users</span
+                >
+                <span class="offer-list__item icon icon-ok">Free Domain</span>
+
+                <span class="offer-list__item icon icon-ok">Free Domain</span>
+              </div>
+            </div>
+
+            <p class="pricing-info__text">
+              Find the Perfect Hosting Package for You, Get the Best Web Hosting
+              Deals Today! Bhost is one of the best web hosting services. Join
+              world best hosting Bhost now and get a free domain name!
+            </p>
+
+            <a href="#" class="pricing-info__button button link">get started</a>
+          </div>
+
+          <div class="pricing-slider__img-wrap">
+            <picture>
+              <source
+                srcset="
+                  /img/pricing/pricing.webp    1x,
+                  /img/pricing/pricing@2x.webp 2x,
+                  /img/pricing/pricing@3x.webp 3x
+                "
+                type="image/webp"
+              />
+              <img
+                class="pricing-slider__img"
+                srcset="
+                  /img/pricing/pricing@2x.jpg 2x,
+                  /img/pricing/pricing@3x.jpg 3x
+                "
+                src="/img/pricing/pricing.jpg"
+                alt="pricing"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-slider__item-wrap">
+        <div class="pricing-slider__item">
+          <div class="pricing-info">
+            <div class="pricing-info__header">
+              <div class="pricing-info__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <linearGradient
+                      id="pricing-lg2"
+                      x1="0%"
+                      x2="70.711%"
+                      y1="70.711%"
+                      y2="0%"
+                    >
+                      <stop
+                        offset="0%"
+                        stop-color="rgb(49,170,226)"
+                        stop-opacity="1"
+                      ></stop>
+                      <stop
+                        offset="100%"
+                        stop-color="rgb(157,53,192)"
+                        stop-opacity="1"
+                      ></stop>
+                    </linearGradient>
+                  </defs>
+
+                  <text
+                    kerning="auto"
+                    fill="url(#pricing-lg2)"
+                    font-size="120px"
+                    x="0px"
+                    y="95px"
+                  >
+                    <tspan
+                      font-size="120px"
+                      font-family="fontello"
+                      fill="url(#pricing-lg2)"
+                    >
+                      &#59398;
+                    </tspan>
+                  </text>
+                </svg>
+              </div>
+              <div class="offer-list">
+                <span class="offer-list__item icon icon-ok">1 Website</span>
+                <span class="offer-list__item icon icon-ok"
+                  >Unlimited Bandwidth</span
+                >
+                <span class="offer-list__item icon icon-ok">Free Domain</span>
+
+                <span class="offer-list__item icon icon-ok"
+                  >100 GB Storage</span
+                >
+                <span class="offer-list__item icon icon-ok"
+                  >For up to 10 Users</span
+                >
+                <span class="offer-list__item icon icon-ok">Free Domain</span>
+              </div>
+            </div>
+
+            <p class="pricing-info__text">
+              Find the Perfect Hosting Package for You, Get the Best Web Hosting
+              Deals Today! Bhost is one of the best web hosting services. Join
+              world best hosting Bhost now and get a free domain name!
+            </p>
+
+            <a href="#" class="pricing-info__button button link">get started</a>
+          </div>
+          <div class="pricing-slider__img-wrap">
+            <picture>
+              <source
+                srcset="
+                  /img/pricing/pricing.webp    1x,
+                  /img/pricing/pricing@2x.webp 2x,
+                  /img/pricing/pricing@3x.webp 3x
+                "
+                type="image/webp"
+              />
+              <img
+                class="pricing-slider__img"
+                srcset="
+                  /img/pricing/pricing@2x.jpg 2x,
+                  /img/pricing/pricing@3x.jpg 3x
+                "
+                src="/img/pricing/pricing.jpg"
+                alt="pricing"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-slider__item-wrap">
+        <div class="pricing-slider__item">
+          <div class="pricing-info">
+            <div class="pricing-info__header">
+              <div class="pricing-info__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <linearGradient
+                      id="pricing-lg3"
+                      x1="0%"
+                      x2="70.711%"
+                      y1="70.711%"
+                      y2="0%"
+                    >
+                      <stop
+                        offset="0%"
+                        stop-color="rgb(49,170,226)"
+                        stop-opacity="1"
+                      ></stop>
+                      <stop
+                        offset="100%"
+                        stop-color="rgb(157,53,192)"
+                        stop-opacity="1"
+                      ></stop>
+                    </linearGradient>
+                  </defs>
+
+                  <text
+                    kerning="auto"
+                    fill="url(#pricing-lg3)"
+                    font-size="120px"
+                    x="0px"
+                    y="95px"
+                  >
+                    <tspan
+                      font-size="120px"
+                      font-family="fontello"
+                      fill="url(#pricing-lg3)"
+                    >
+                      &#59398;
+                    </tspan>
+                  </text>
+                </svg>
+              </div>
+              <div class="offer-list">
+                <span class="offer-list__item icon icon-ok">1 Website</span>
+                <span class="offer-list__item icon icon-ok"
+                  >Unlimited Bandwidth</span
+                >
+                <span class="offer-list__item icon icon-ok">Free Domain</span>
+
+                <span class="offer-list__item icon icon-ok"
+                  >100 GB Storage</span
+                >
+                <span class="offer-list__item icon icon-ok"
+                  >For up to 10 Users</span
+                >
+                <span class="offer-list__item icon icon-ok">Free Domain</span>
+              </div>
+            </div>
+
+            <p class="pricing-info__text">
+              Find the Perfect Hosting Package for You, Get the Best Web Hosting
+              Deals Today! Bhost is one of the best web hosting services. Join
+              world best hosting Bhost now and get a free domain name!
+            </p>
+
+            <a href="#" class="pricing-info__button button link">get started</a>
+          </div>
+          <div class="pricing-slider__img-wrap">
+            <picture>
+              <source
+                srcset="
+                  /img/pricing/pricing.webp    1x,
+                  /img/pricing/pricing@2x.webp 2x,
+                  /img/pricing/pricing@3x.webp 3x
+                "
+                type="image/webp"
+              />
+              <img
+                class="pricing-slider__img"
+                srcset="
+                  /img/pricing/pricing@2x.jpg 2x,
+                  /img/pricing/pricing@3x.jpg 3x
+                "
+                src="/img/pricing/pricing.jpg"
+                alt="pricing"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pricing-controls-btns">
+      <div class="pricing-controls-btns__prev icon icon-left"></div>
+      <div class="pricing-controls-btns__next icon icon-right"></div>
+    </div>
+
+    <div class="pricing-nav-container pricing__nav-container"></div>
+  </div>
+</section>
+
+      <section class="site-builder" id="site-builder">
+  <div class="container site-builder__container">
+    <div class="site-builder__img-wrap">
+      <picture>
+        <source
+          srcset="
+            /img/site-builder/site-builder.webp    1x,
+            /img/site-builder/site-builder@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <img
+          class="site-builder__img"
+          srcset="/img/site-builder/site-builder@2x.jpg 2x"
+          src="/img/site-builder/site-builder.jpg"
+          alt="web site builder"
+        />
+      </picture>
+    </div>
+    <div class="site-builder__content">
+      <h2 class="site-builder__title">web site builder</h2>
+      <p class="site-builder__text">
+        Website hosting services are basically the plot of internet land that
+        your website storefront sits on. If you have a website, it need to be be
+        on the web, these hosting services are the landlords that put up your
+        site and keep it running.
+      </p>
+      <p class="site-builder__text">
+        So your customer can access and see it when they type in your url. There
+        are different types of hosting services that cater to varying types of
+        businesses.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="how-choose" id="how-choose">
+  <div class="container how-choose__container">
+    <h2 class="how-choose__title">
+      How to choose the best web hosting company?
+    </h2>
+    <div class="tabs">
+      <input
+        class="tabs__input"
+        type="radio"
+        name="how-choose-btn"
+        id="how-choose-tab-1"
+        value=""
+        checked
+      />
+      <input
+        class="tabs__input"
+        type="radio"
+        name="how-choose-btn"
+        id="how-choose-tab-2"
+        value=""
+      />
+      <input
+        class="tabs__input"
+        type="radio"
+        name="how-choose-btn"
+        id="how-choose-tab-3"
+        value=""
+      />
+      <input
+        class="tabs__input"
+        type="radio"
+        name="how-choose-btn"
+        id="how-choose-tab-4"
+        value=""
+      />
+      <input
+        class="tabs__input"
+        type="radio"
+        name="how-choose-btn"
+        id="how-choose-tab-5"
+        value=""
+      />
+      <input
+        class="tabs__input"
+        type="radio"
+        name="how-choose-btn"
+        id="how-choose-tab-6"
+        value=""
+      />
+
+      <nav class="tabs__list">
+        <label class="tabs__link" for="how-choose-tab-1">Bandwidth</label>
+        <label class="tabs__link" for="how-choose-tab-2">Compatibility</label>
+        <label class="tabs__link" for="how-choose-tab-3">Reliability</label>
+        <label class="tabs__link" for="how-choose-tab-4">Security</label>
+        <label class="tabs__link" for="how-choose-tab-5">Shared</label>
+        <label class="tabs__link" for="how-choose-tab-6">Load time</label>
+      </nav>
+      <div class="tabs__body">
+        <div class="how-choose-tab-1 tabs__block">
+          <h4 class="tabs__title">The First Thing You Need!</h4>
+          <div class="tabs__img-wrap">
+            <picture>
+              <source
+                srcset="
+                  /img/how-choose/bandwidth.webp    1x,
+                  /img/how-choose/bandwidth@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="tabs__img"
+                srcset="/img/how-choose/bandwidth@2x.png 2x"
+                src="/img/how-choose/bandwidth.png"
+                alt="how-choose"
+              />
+            </picture>
+          </div>
+          <div class="tabs__content">
+            <p class="tabs__text">
+              Welcome to WHMCS! You have made great choice an we want to help
+              you get up a running as quickly as possible. This is a sample
+              announcement. Announcements are a ways to keep your customers
+              informed about news and special offers.
+            </p>
+            <p class="tabs__text">
+              Ntegrity, working families, affiliamedicasl supplies
+              insurmountable challees, dialogues, hack combat malaria diversity
+              approach. Nonprofit collaborative cities and catalyUnited Nations.
+              Save lives innovate hunger, visionary accelses disruptor
+              recognizes potential. Informals and economies volunteer foundation
+              benefit reproductive rights.
+            </p>
+            <p class="tabs__text">
+              ntegrity, working families, affiliamediscal supplies
+              insurmountable challees, dialogues, hack combat malaria diversity
+              approach. Nonprofit collaborative cities and catalyUnited Nations.
+              Save live innovate hunger, visionary acceles disruptor recognize
+              potential.
+            </p>
+          </div>
+        </div>
+        <div class="how-choose-tab-2 tabs__block">
+          <h4 class="tabs__title">Compatibility</h4>
+          <div class="tabs__img-wrap">
+            <picture>
+              <source
+                srcset="
+                  /img/how-choose/compatibility.webp    1x,
+                  /img/how-choose/compatibility@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="tabs__img"
+                srcset="/img/how-choose/compatibility@2x.jpg 2x"
+                src="/img/how-choose/compatibility.jpg"
+                alt="how-choose"
+              />
+            </picture>
+          </div>
+          <div class="tabs__content">
+            <p class="tabs__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              asperiores fugiat temporibus commodi pariatur architecto
+              voluptatem eum iusto nam hic, numquam dicta nisi aliquid
+              praesentium est perferendis enim, illum aut?
+            </p>
+            <p class="tabs__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium, inventore omnis. Delectus ea tempore sit! Soluta vitae
+              perferendis illo quo veniam, quis aliquid omnis iure tempora et
+              tempore corrupti doloribus! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quas neque perspiciatis, fugiat quo aliquid
+              placeat adipisci ullam
+            </p>
+            <p class="tabs__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium, inventore omnis. Delectus ea tempore sit! Soluta vitae
+              perferendis illo quo veniam, quis aliquid omnis iure tempora et
+              tempore corrupti doloribus!
+            </p>
+          </div>
+        </div>
+        <div class="how-choose-tab-3 tabs__block">
+          <h4 class="tabs__title">Reliability</h4>
+          <div class="tabs__img-wrap">
+            <picture>
+              <source
+                srcset="
+                  /img/how-choose/reliability.webp    1x,
+                  /img/how-choose/reliability@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="tabs__img"
+                srcset="/img/how-choose/reliability@2x.jpg 2x"
+                src="/img/how-choose/reliability.jpg"
+                alt="how-choose"
+              />
+            </picture>
+          </div>
+          <div class="tabs__content">
+            <p class="tabs__text">
+              Welcome to WHMCS! You have made great choice an we want to help
+              you get up a running as quickly as possible. This is a sample
+              announcement. Announcements are a ways to keep your customers
+              informed about news and special offers.
+            </p>
+            <p class="tabs__text">
+              Ntegrity, working families, affiliamedicasl supplies
+              insurmountable challees, dialogues, hack combat malaria diversity
+              approach. Nonprofit collaborative cities and catalyUnited Nations.
+              Save lives innovate hunger, visionary accelses disruptor
+              recognizes potential. Informals and economies volunteer foundation
+              benefit reproductive rights.
+            </p>
+            <p class="tabs__text">
+              ntegrity, working families, affiliamediscal supplies
+              insurmountable challees, dialogues, hack combat malaria diversity
+              approach. Nonprofit collaborative cities and catalyUnited Nations.
+              Save live innovate hunger, visionary acceles disruptor recognize
+              potential.
+            </p>
+          </div>
+        </div>
+        <div class="how-choose-tab-4 tabs__block">
+          <h4 class="tabs__title">Security</h4>
+          <div class="tabs__img-wrap">
+            <picture>
+              <source
+                srcset="
+                  /img/how-choose/security.webp    1x,
+                  /img/how-choose/security@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="tabs__img"
+                srcset="/img/how-choose/security@2x.jpg 2x"
+                src="/img/how-choose/security.jpg"
+                alt="how-choose"
+              />
+            </picture>
+          </div>
+          <div class="tabs__content">
+            <p class="tabs__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              asperiores fugiat temporibus commodi pariatur architecto
+              voluptatem eum iusto nam hic, numquam dicta nisi aliquid
+              praesentium est perferendis enim, illum aut?
+            </p>
+            <p class="tabs__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium, inventore omnis. Delectus ea tempore sit! Soluta vitae
+              perferendis illo quo veniam, quis aliquid omnis iure tempora et
+              tempore corrupti doloribus! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quas neque perspiciatis, fugiat quo aliquid
+              placeat adipisci ullam
+            </p>
+            <p class="tabs__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium, inventore omnis. Delectus ea tempore sit! Soluta vitae
+              perferendis illo quo veniam, quis aliquid omnis iure tempora et
+              tempore corrupti doloribus!
+            </p>
+          </div>
+        </div>
+        <div class="how-choose-tab-5 tabs__block">
+          <h4 class="tabs__title">Shared</h4>
+          <div class="tabs__img-wrap">
+            <picture>
+              <source
+                srcset="
+                  /img/how-choose/shared.webp    1x,
+                  /img/how-choose/shared@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="tabs__img"
+                srcset="/img/how-choose/shared@2x.jpg 2x"
+                src="/img/how-choose/shared.jpg"
+                alt="how-choose"
+              />
+            </picture>
+          </div>
+          <div class="tabs__content">
+            <p class="tabs__text">
+              Welcome to WHMCS! You have made great choice an we want to help
+              you get up a running as quickly as possible. This is a sample
+              announcement. Announcements are a ways to keep your customers
+              informed about news and special offers.
+            </p>
+            <p class="tabs__text">
+              Ntegrity, working families, affiliamedicasl supplies
+              insurmountable challees, dialogues, hack combat malaria diversity
+              approach. Nonprofit collaborative cities and catalyUnited Nations.
+              Save lives innovate hunger, visionary accelses disruptor
+              recognizes potential. Informals and economies volunteer foundation
+              benefit reproductive rights.
+            </p>
+            <p class="tabs__text">
+              ntegrity, working families, affiliamediscal supplies
+              insurmountable challees, dialogues, hack combat malaria diversity
+              approach. Nonprofit collaborative cities and catalyUnited Nations.
+              Save live innovate hunger, visionary acceles disruptor recognize
+              potential.
+            </p>
+          </div>
+        </div>
+        <div class="how-choose-tab-6 tabs__block">
+          <h4 class="tabs__title">Load Time</h4>
+          <div class="tabs__img-wrap">
+            <picture>
+              <source
+                srcset="
+                  /img/how-choose/load-time.webp    1x,
+                  /img/how-choose/load-time@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="tabs__img"
+                srcset="/img/how-choose/load-time@2x.jpg 2x"
+                src="/img/how-choose/load-time.jpg"
+                alt="how-choose"
+              />
+            </picture>
+          </div>
+          <div class="tabs__content">
+            <p class="tabs__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              asperiores fugiat temporibus commodi pariatur architecto
+              voluptatem eum iusto nam hic, numquam dicta nisi aliquid
+              praesentium est perferendis enim, illum aut?
+            </p>
+            <p class="tabs__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium, inventore omnis. Delectus ea tempore sit! Soluta vitae
+              perferendis illo quo veniam, quis aliquid omnis iure tempora et
+              tempore corrupti doloribus! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quas neque perspiciatis, fugiat quo aliquid
+              placeat adipisci ullam
+            </p>
+            <p class="tabs__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium, inventore omnis. Delectus ea tempore sit! Soluta vitae
+              perferendis illo quo veniam, quis aliquid omnis iure tempora et
+              tempore corrupti doloribus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <section class="facts" id="facts">
+  <picture>
+    <source
+      srcset="/img/facts/facts-bg.webp 1x, /img/facts/facts-bg@2x.webp 2x"
+      type="image/webp"
+    />
+    <img
+      class="facts__bg"
+      srcset="/img/facts/facts-bg@2x.jpg 2x"
+      src="/img/facts/facts-bg.jpg"
+      alt="fact bg"
+    />
+  </picture>
+  <div class="container">
+    <div class="facts__item-list">
+      <div class="facts__item">
+        <div class="facts__icon icon-user-plus icon"></div>
+        <div class="facts__descr">
+          <div class="facts__count">2514</div>
+          <h3 class="facts__text">happe user</h3>
+        </div>
+      </div>
+      <div class="facts__item">
+        <div class="facts__icon icon-file-pdf icon"></div>
+        <div class="facts__descr">
+          <div class="facts__count">6875</div>
+          <h3 class="facts__text">files hosted</h3>
+        </div>
+      </div>
+      <div class="facts__item">
+        <div class="facts__icon icon-doc-text-inv icon"></div>
+        <div class="facts__descr">
+          <div class="facts__count">25025</div>
+          <h3 class="facts__text">pages served</h3>
+        </div>
+      </div>
+      <div class="facts__item">
+        <div class="facts__icon icon-cart-plus icon"></div>
+        <div class="facts__descr">
+          <div class="facts__count">147</div>
+          <h3 class="facts__text">our store</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="review" id="review">
+  <div class="container review__container">
+    <h2 class="review__title">they ate happy!</h2>
+
+    <div class="review-slider">
+      <div class="review-slider__item">
+        <div class="review-list review__review-list">
+          <div
+            class="review-list__item review-list__item_first"
+            data-for="first"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/1.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/1.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+          <div
+            class="review-list__item review-list__item_second"
+            data-for="second"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/2.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/2.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+          <div
+            class="review-list__item review-list__item_third"
+            data-for="third"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/3.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/3.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+          <div
+            class="review-list__item review-list__item_fourth"
+            data-for="fourth"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/4.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/4.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+          <div
+            class="review-list__item review-list__item_fifth"
+            data-for="fifth"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/5.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/5.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <blockquote class="blockquote review__blockquote" data-for="first">
+          <cite class="blockquote__author">Lisa Daniel</cite>
+          <cite class="blockquote__position">Team Lead</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg1"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg1)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg1)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem possimus ducimus natus molestiae fugiat cupiditate
+              beatae itaque placeat deserunt saepe earum consequuntur accusamus
+              a veniam, quod, optio aliquam adipisci minima?
+            </p>
+          </div>
+        </blockquote>
+        <blockquote class="blockquote review__blockquote" data-for="second">
+          <cite class="blockquote__author">Ann Petrashkevich</cite>
+          <cite class="blockquote__position">WEB designer</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg2"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg2)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg2)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old.
+            </p>
+          </div>
+        </blockquote>
+        <blockquote
+          class="blockquote review__blockquote review__blockquote_active"
+          data-for="third"
+        >
+          <cite class="blockquote__author">Addison Tylor</cite>
+          <cite class="blockquote__position">CEO at DMC</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg3"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg3)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg3)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              There is a dizzying array of web hosting providers competing for
+              your business. How can you pinpoint the best one? If you are
+              looking for a reliable and affordable hosting company? This is the
+              right place to start! I am happy with the Bhost, One of the best
+              hosting.
+            </p>
+          </div>
+        </blockquote>
+        <blockquote class="blockquote review__blockquote" data-for="fourth">
+          <cite class="blockquote__author">Jack Daniel</cite>
+          <cite class="blockquote__position">Developer</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg4"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg4)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg4)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable
+            </p>
+          </div>
+        </blockquote>
+        <blockquote class="blockquote review__blockquote" data-for="fifth">
+          <cite class="blockquote__author">John Lennon</cite>
+          <cite class="blockquote__position">Artist, musician, poet</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg5"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg5)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg5)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              All the Lorem Ipsum generators on the Internet tend to repeat
+              predefined chunks as necessary, making this the first true
+              generator on the Internet. It uses a dictionary of over 200 Latin
+              words, combined with a handful of model sentence structures, to
+              generate Lorem Ipsum which looks reasonable.
+            </p>
+          </div>
+        </blockquote>
+      </div>
+      <div class="review-slider__item">
+        <div class="review-list review__review-list">
+          <div
+            class="review-list__item review-list__item_first"
+            data-for="first"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/1.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/1.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+          <div
+            class="review-list__item review-list__item_second"
+            data-for="second"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/2.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/2.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+          <div
+            class="review-list__item review-list__item_third"
+            data-for="third"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/3.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/3.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+          <div
+            class="review-list__item review-list__item_fourth"
+            data-for="fourth"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/4.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/4.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+          <div
+            class="review-list__item review-list__item_fifth"
+            data-for="fifth"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/5.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/5.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <blockquote class="blockquote review__blockquote" data-for="first">
+          <cite class="blockquote__author">Lisa Daniel</cite>
+          <cite class="blockquote__position">Team Lead</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg6"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg6)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg6)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem possimus ducimus natus molestiae fugiat cupiditate
+              beatae itaque placeat deserunt saepe earum consequuntur accusamus
+              a veniam, quod, optio aliquam adipisci minima?
+            </p>
+          </div>
+        </blockquote>
+        <blockquote class="blockquote review__blockquote" data-for="second">
+          <cite class="blockquote__author">Ann Petrashkevich</cite>
+          <cite class="blockquote__position">WEB designer</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg7"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg7)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg7)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+              professor at Hampden-Sydney College in Virginia
+            </p>
+          </div>
+        </blockquote>
+        <blockquote
+          class="blockquote review__blockquote review__blockquote_active"
+          data-for="third"
+        >
+          <cite class="blockquote__author">Addison Tylor</cite>
+          <cite class="blockquote__position">CEO at DMC</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg8"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg8)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg8)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              There is a dizzying array of web hosting providers competing for
+              your business. How can you pinpoint the best one? If you are
+              looking for a reliable and affordable hosting company? This is the
+              right place to start! I am happy with the Bhost, One of the best
+              hosting.
+            </p>
+          </div>
+        </blockquote>
+        <blockquote class="blockquote review__blockquote" data-for="fourth">
+          <cite class="blockquote__author">Jack Daniel</cite>
+          <cite class="blockquote__position">Developer</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg9"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg9)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg9)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable
+            </p>
+          </div>
+        </blockquote>
+        <blockquote class="blockquote review__blockquote" data-for="fifth">
+          <cite class="blockquote__author">John Lennon</cite>
+          <cite class="blockquote__position">Artist, musician, poet</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg10"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg10)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg10)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              All the Lorem Ipsum generators on the Internet tend to repeat
+              predefined chunks as necessary, making this the first true
+              generator on the Internet. It uses a dictionary of over 200 Latin
+              words, combined with a handful of model sentence structures, to
+              generate Lorem Ipsum which looks reasonable.
+            </p>
+          </div>
+        </blockquote>
+      </div>
+      <div class="review-slider__item">
+        <div class="review-list review__review-list">
+          <div
+            class="review-list__item review-list__item_first"
+            data-for="first"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/1.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/1.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+          <div
+            class="review-list__item review-list__item_second"
+            data-for="second"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/2.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/2.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+          <div
+            class="review-list__item review-list__item_third"
+            data-for="third"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/3.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/3.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+          <div
+            class="review-list__item review-list__item_fourth"
+            data-for="fourth"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/4.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/4.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+          <div
+            class="review-list__item review-list__item_fifth"
+            data-for="fifth"
+          >
+            <picture>
+              <source type="image/webp" srcset="/img/review/5.webp" />
+              <img
+                class="review-list__img"
+                src="/img/review/5.jpg"
+                alt="person photo"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <blockquote class="blockquote review__blockquote" data-for="first">
+          <cite class="blockquote__author">Lisa Daniel</cite>
+          <cite class="blockquote__position">Team Lead</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg11"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg11)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg11)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem possimus ducimus natus molestiae fugiat cupiditate
+              beatae itaque placeat deserunt saepe earum consequuntur accusamus
+              a veniam, quod, optio aliquam adipisci minima?
+            </p>
+          </div>
+        </blockquote>
+        <blockquote class="blockquote review__blockquote" data-for="second">
+          <cite class="blockquote__author">Ann Petrashkevich</cite>
+          <cite class="blockquote__position">WEB designer</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg12"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg12)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg12)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+              professor at Hampden-Sydney College in Virginia
+            </p>
+          </div>
+        </blockquote>
+        <blockquote
+          class="blockquote review__blockquote review__blockquote_active"
+          data-for="third"
+        >
+          <cite class="blockquote__author">Addison Tylor</cite>
+          <cite class="blockquote__position">CEO at DMC</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg13"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg13)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg13)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              There is a dizzying array of web hosting providers competing for
+              your business. How can you pinpoint the best one? If you are
+              looking for a reliable and affordable hosting company? This is the
+              right place to start!
+            </p>
+          </div>
+        </blockquote>
+        <blockquote class="blockquote review__blockquote" data-for="fourth">
+          <cite class="blockquote__author">Jack Daniel</cite>
+          <cite class="blockquote__position">Developer</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg14"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg14)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg14)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable
+            </p>
+          </div>
+        </blockquote>
+        <blockquote class="blockquote review__blockquote" data-for="fifth">
+          <cite class="blockquote__author">John Lennon</cite>
+          <cite class="blockquote__position">Artist, musician, poet</cite>
+          <div class="blockquote__quote">
+            <div class="blockquote__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="26px"
+                height="26px"
+              >
+                <defs>
+                  <linearGradient
+                    id="bq-lg15"
+                    x1="0%"
+                    x2="70.711%"
+                    y1="70.711%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="rgb(49,170,226)"
+                      stop-opacity="1"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      stop-color="rgb(157,53,192)"
+                      stop-opacity="1"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+
+                <text
+                  kerning="auto"
+                  fill="url(#bq-lg15)"
+                  font-size="24px"
+                  x="0px"
+                  y="24px"
+                >
+                  <tspan
+                    font-size="24px"
+                    font-family="fontello"
+                    fill="url(#bq-lg15)"
+                  >
+                    &#61709;
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+            <p class="blockquote__text">
+              All the Lorem Ipsum generators on the Internet tend to repeat
+              predefined chunks as necessary, making this the first true
+              generator on the Internet. It uses a dictionary of over 200 Latin
+              words, combined with a handful of model sentence structures, to
+              generate Lorem Ipsum which looks reasonable.
+            </p>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="review-nav-container review__nav-container"></div>
+  </div>
+</section>
+
+
+      <section class="blog" id="blog">
+  <div class="container">
+    <div class="blog-card-list blog__blog-card-list">
+      <div class="blog-card-list__item">
+        <div class="blog-card-list__header">
+          <picture>
+            <source
+              srcset="
+                /img/blog/1.webp    1x,
+                /img/blog/1@2x.webp 2x,
+                /img/blog/1@3x.webp 3x
+              "
+              type="image/webp"
+            />
+            <img
+              class="blog-card-list__img"
+              srcset="/img/blog/1@2x.jpg 2x, /img/blog/1@3x.jpg 3x"
+              src="/img/blog/1.jpg"
+              alt="blog"
+            />
+          </picture>
+          <div class="blog-card-list__date" title="August 6th, 2020">6 nov</div>
+        </div>
+        <div class="blog-card-list__body">
+          <address>
+            <a
+              rel="author"
+              class="blog-card-list__author link"
+              href="/author/jordan-alba"
+              >Jordan Alba
+            </a>
+          </address>
+
+          <h4 class="blog-card-list__title">
+            What are Website Hosting Services and Which is Right for You?
+          </h4>
+          <p class="blog-card-list__text">
+            Shared hosting is the most popular hosting where you share
+            bandwidth, diskspace and capacity,other network.
+          </p>
+
+          <div class="blog-card-list__btns-block">
+            <a href="#" class="blog-card-list__button button link">read more</a>
+
+            <a
+              href="#"
+              class="blog-card-list__comment icon icon-comment-empty link"
+            >
+              16
+            </a>
+            <a href="#" class="blog-card-list__share icon icon-share link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card-list__item">
+        <div class="blog-card-list__header">
+          <picture>
+            <source
+              srcset="
+                /img/blog/2.webp    1x,
+                /img/blog/2@2x.webp 2x,
+                /img/blog/2@3x.webp 3x
+              "
+              type="image/webp"
+            />
+            <img
+              class="blog-card-list__img"
+              srcset="/img/blog/2@2x.jpg 2x, /img/blog/2@3x.jpg 3x"
+              src="/img/blog/2.jpg"
+              alt="blog"
+            />
+          </picture>
+
+          <div class="blog-card-list__date" title="August 6th, 2020">6 nov</div>
+        </div>
+        <div class="blog-card-list__body">
+          <address>
+            <a
+              rel="author"
+              class="blog-card-list__author link"
+              href="/author/jordan-alba"
+              >Jordan Alba
+            </a>
+          </address>
+          <h4 class="blog-card-list__title">
+            What are Website Hosting Services and Which is Right for You?
+          </h4>
+          <p class="blog-card-list__text">
+            Shared hosting is the most popular hosting where you share
+            bandwidth, diskspace and capacity,other network.
+          </p>
+          <div class="blog-card-list__btns-block">
+            <a href="#" class="blog-card-list__button button link">read more</a>
+
+            <a
+              href="#"
+              class="blog-card-list__comment icon icon-comment-empty link"
+            >
+              16
+            </a>
+            <a href="#" class="blog-card-list__share icon icon-share link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card-list__item">
+        <div class="blog-card-list__header">
+          <picture>
+            <source
+              srcset="
+                /img/blog/3.webp    1x,
+                /img/blog/3@2x.webp 2x,
+                /img/blog/3@3x.webp 3x
+              "
+              type="image/webp"
+            />
+            <img
+              class="blog-card-list__img"
+              srcset="/img/blog/3@2x.jpg 2x, /img/blog/3@3x.jpg 3x"
+              src="/img/blog/3.jpg"
+              alt="blog"
+            />
+          </picture>
+          <div class="blog-card-list__date" title="August 6th, 2020">6 nov</div>
+        </div>
+        <div class="blog-card-list__body">
+          <address>
+            <a
+              rel="author"
+              class="blog-card-list__author link"
+              href="/author/jordan-alba"
+              >Jordan Alba
+            </a>
+          </address>
+          <h4 class="blog-card-list__title">
+            What are Website Hosting Services and Which is Right for You?
+          </h4>
+          <p class="blog-card-list__text">
+            Shared hosting is the most popular hosting where you share
+            bandwidth, diskspace and capacity,other network.
+          </p>
+          <div class="blog-card-list__btns-block">
+            <a href="#" class="blog-card-list__button button link">
+              read more
+            </a>
+
+            <a
+              href="#"
+              class="blog-card-list__comment icon icon-comment-empty link"
+            >
+              16
+            </a>
+            <a href="#" class="blog-card-list__share icon icon-share link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="FAQ" id="FAQ">
+  <div class="container FAQ__container">
+    <h2 class="FAQ__title">Have question?</h2>
+    <div class="FAQ__body">
+      <input
+        class="FAQ__input"
+        type="radio"
+        name="FAQ-categories"
+        id="FAQ-tab-1"
+        value=""
+      />
+      <input
+        class="FAQ__input"
+        type="radio"
+        name="FAQ-categories"
+        id="FAQ-tab-2"
+        value=""
+        checked
+      />
+      <input
+        class="FAQ__input"
+        type="radio"
+        name="FAQ-categories"
+        id="FAQ-tab-3"
+        value=""
+      />
+      <input
+        class="FAQ__input"
+        type="radio"
+        name="FAQ-categories"
+        id="FAQ-tab-4"
+        value=""
+      />
+      <div class="categories">
+        <div class="categories__title">Categories</div>
+        <label class="categories__filter" for="FAQ-tab-1"
+          >Internet
+          <span class="categories__count"></span>
+        </label>
+        <label class="categories__filter" for="FAQ-tab-2"
+          >Hosting
+          <span class="categories__count"></span>
+        </label>
+        <label class="categories__filter" for="FAQ-tab-3"
+          >Server&nbsp;Accessories
+          <span class="categories__count"></span>
+        </label>
+        <label class="categories__filter" for="FAQ-tab-4"
+          >Server&nbsp;Dedicated
+          <span class="categories__count"></span>
+        </label>
+      </div>
+
+      <div class="FAQ-tab-1 spoilers">
+        <div class="spoilers__item">
+          <p class="spoilers__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptatibus quae ducimus quaerat fugit delectus officiis eligendi
+            harum sed. Qui aperiam quo quam repudiandae molestiae, voluptates
+            dolorem dicta! Adipisci, similique nisi!
+          </p>
+          <div class="spoilers__title icon icon-plus">
+            What ducimus quaerat fugit delectus officiis eligendi harum sed?
+          </div>
+        </div>
+        <div class="spoilers__item">
+          <p class="spoilers__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam et
+            aspernatur iste nesciunt, enim officiis repellendus corrupti. Totam
+            dolores harum facere molestias pariatur, eius error numquam. Est
+            adipisci tempore illo.
+          </p>
+          <div class="spoilers__title icon icon-plus">
+            Ullam et aspernatur iste nesciunt, enim officiis?
+          </div>
+        </div>
+      </div>
+      <div class="FAQ-tab-2 spoilers">
+        <div class="spoilers__item">
+          <p class="spoilers__text">
+            The best web hosting Services, ability to run a successful website
+            is going to seriously hindered. There is a dizzying array of web
+            hosting providers competing for your business. Bandwidth, Diskspace,
+            shared hosting, vps, load time, customers support etc.
+          </p>
+          <div class="spoilers__title icon icon-plus">
+            How one can choose his webhosting?
+          </div>
+        </div>
+        <div class="spoilers__item">
+          <p class="spoilers__text">
+            The best web hosting Services, ability to run a successful website
+            is going to seriously hindered. There is a dizzying array of web
+            hosting providers competing for your business. Bandwidth, Diskspace,
+            shared hosting, vps, load time, customers support etc.
+          </p>
+          <div class="spoilers__title icon icon-plus">
+            What is Cloud Hosting or web Hosting Services?
+          </div>
+        </div>
+        <div class="spoilers__item">
+          <p class="spoilers__text">
+            The best web hosting Services, ability to run a successful website
+            is going to seriously hindered. There is a dizzying array of web
+            hosting providers competing for your business. Bandwidth, Diskspace,
+            shared hosting, vps, load time, customers support etc.
+          </p>
+          <div class="spoilers__title icon icon-plus">
+            How to Choose the Best Web Hosting Company?
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="subscribe" id="subscribe">
+  <div class="container">
+    <div class="subscribe__header">
+      <h2 class="subscribe__title">Subscribe our newsletter</h2>
+      <h5 class="subscribe__subtitle">Singup for our news letter</h5>
+    </div>
+
+    <div class="subscribe__body">
+      <div class="subscribe-form__wrap">
+        <form action="#" enctype="multipart/form-data" class="search-form">
+          <input
+            class="subscribe-form__input"
+            type="search"
+            placeholder="Enter your email address"
+            name="search"
+          />
+          <input class="subscribe-form__btn" type="submit" value="subscribe" />
+        </form>
+      </div>
+
+      <div class="contact-card subscribe__contact-card">
+        <div class="contact-card__icon icon icon-phone"></div>
+        <h2 class="contact-card__title">Need Help?</h2>
+        <h3 class="contact-card__subtitle">Call Us!</h3>
+        <p class="contact-card__phone">+91 254 754 785</p>
+        <a href="#" class="contact-card__button button link">live chat</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="sponsors" id="sponsors">
+  <div class="container">
+    <div class="sponsors__slider-wrap">
+      <div class="sponsors-slider">
+        <div class="sponsors-slider__item">
+          <a href="#" class="sponsors-slider__link">
+            <img
+              src="data:image/png;base64,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"
+              alt="INSTAR"
+            />
+          </a>
+        </div>
+        <div class="sponsors-slider__item">
+          <a href="#" class="sponsors-slider__link">
+            <img
+              src="data:image/png;base64,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"
+              alt="DEVN.CO"
+            />
+          </a>
+        </div>
+        <div class="sponsors-slider__item">
+          <a href="#" class="sponsors-slider__link">
+            <img
+              src="data:image/png;base64,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"
+              alt="3 Peaks computers"
+            />
+          </a>
+        </div>
+        <div class="sponsors-slider__item">
+          <a href="#" class="sponsors-slider__link">
+            <img
+              src="data:image/png;base64,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"
+              alt="INSTAR"
+            />
+          </a>
+        </div>
+        <div class="sponsors-slider__item">
+          <a href="#" class="sponsors-slider__link">
+            <img
+              src="data:image/png;base64,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"
+              alt="DEVN.CO"
+            />
+          </a>
+        </div>
+        <div class="sponsors-slider__item">
+          <a href="#" class="sponsors-slider__link">
+            <img
+              src="data:image/png;base64,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"
+              alt="INSTAR"
+            />
+          </a>
+        </div>
+        <div class="sponsors-slider__item">
+          <a href="#" class="sponsors-slider__link">
+            <img
+              src="data:image/png;base64,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"
+              alt="3 Peaks computers"
+            />
+          </a>
+        </div>
+        <div class="sponsors-slider__item">
+          <a href="#" class="sponsors-slider__link">
+            <img
+              src="data:image/png;base64,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"
+              alt="INSTAR"
+            />
+          </a>
+        </div>
+        <div class="sponsors-slider__item">
+          <a href="#" class="sponsors-slider__link">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAAAlCAYAAADLN15sAAAMyElEQVRoQ+1aC3BU1Rn+/3PvJoAhQGkqoFVrGW3HqdUaGZ819QFNcu4Fatfa1pFitVoUUdHWB0hEwaIoiooWxwfWBxohyb13E3nUQW2n6MTK1EdbtT6qBq31lZBk1909f+fLnGWWsMlqRuqYeGZ2hnDPPffe7/yv7/sP0wCH1tpTSs00xqSYuYSIxhKRiEiGmdPZbPa85ubmFwe4/KC/jQfyhZ7nfYuZVxpjRjPzeyLSqZRKGGO+xsw/IKJSZr4xCILVA1l/KNwzIOC11qdbgNuI6HvMvDUIglN8368koutFhEXkiSiKLoMXDAUgP+03Dgj4KVOmfCWVSnWNGDFitOu6K4wxI4noeWYuI6I9iEgxc2cmk7n4y3BTeEt2Al5rXcXMY8MwXFNsF7XWP2PmM4ioi4gAeoaIOonIsX9fG4Zh1Mc6DM8hoonbtm1bsGnTpmSx5w2m6zsAX1NTs5/jOCuIaDQRIWavSiQSrxT6YK31Hkqpm0RklAV++zSEGqVUuTFmfRRFV/W+3/f9/UXkTCI6nIiGM/ODQRBcPZiALfYt24GvqqoaVl5evkxEvktEH1nw3yGi+8ePH9+wcuXKdP5inucBuNNE5F1m3imOM/MoEXmdmWcFQdCBe+PxeEl3d/fJzBwnoq8S0QdEhHwwhpmvCMOwpdgLD5br24H3PO9XRATXf5eIjE2KI4gIv1ZmvicIglZ8eHV1dYXjOLcgJNnQUihXlIgIYv3sMAz/obVGEp5BRIeJSDszdwN0+5zd4DWO48xubGx8bbCA29939ADm+/5EIroZQBERYm0OSFiymwsnSqkonU7f5TiOJqKzUUrmzS30nDHwGCJ6lYhmYx1m/pCIsgXu211EElEUXTFkgNdaX8zMU621F7JebECpiJQppf4mIrDQCptMi+GERDuciD4molQ/G1VKRCVKqVlNTU0vFFv0i36dp02btk82m72FiIb1TpK9Pg6sFKED1QtAzPeMvnDAhsXsReSI/spXzK1g5oYgCK75ogNb7P3Z87wLkfeI6D/FJu/q6yIyDOHLdd2zGxoaEMYG7WDf9+eLSLWNu9uIqJhl7kowEJbGMvOywS43cDweH55MJicR0Y8s/RdjDKqO/yvVt9aOMJZk5hVBENTvyh3+vNfeHnPr6upUa2vr8Uqp6SLybcs+d6UH9FRMtlx1RGQrEW12HGdDU1PTs583MLv6+TslO5CcVCp1rDGmlpkPguWLCAjVZzbAbJkZ+g5Cy4sQ1IwxLc3NzW8P5CEwmrq6OnCPgiMejzv19fVZzMOE/Ln4v7a2NiePIOaX0p/kdbiurg6/os/PX6zPKqOqqsotKys7lplPJCLIwNgB6DADzQGwcFROIGRpEfk7EW0QkU2JRAIM9lMN3/d9ETkOFRbKW6VUtzHmTxMmTIhyIGqtj7LvP4KZQczesATutY6OjhtGjhyJ8Oox88YgCFZ5nofvRaGBxsLGjo6Opk2bNkF/2ml4njdCRH6slDrcqrFbSkpKmtauXQvP7Rm2YpxGRAdY7JqjKFqPa0XVyerq6tJYLDaFiLQx5gA0OYioRwL4hCNXUo4WkW5mfpKZH21vb3+iiDCWY7UFH+P7/jkiAoEOhAwbtzs2VUTWRlG0cOrUqXsaY1baBk0nMz9vjLlPKbUAaqpSap6I/BwbQUQzmRkco4dEMrMRERjIdWEYPtD7BeLxeFl3d3cdM//Qch+U1+OICMZUB6bu+/7BIrJARPZl5jdEBL2LYSKyKoqi5VAIZ2az2Q0tLS1v9gckHmZD0FRm3s/KCsgBhVgoLAZOAuKEH8DZLCKPRFH0VH/Pqa2tPUQpdUQsFns433p636O1PpWZz4WY5zjOskwmsx8zX8rMexPROdlsdisz/0Ep9XImk7l80qRJbyAcaK3nMbNPRC+JCBo3z4ZheIHW+izIG0R0qX3WEiJqCMPwkj6ejXlPO45zeSqVSsVisfONMScopR4YN27c0ra2tuuZ+QQwd9d1b8tkMvsS0UIigqh4Jer4vyLOMvNfoMkkk8kt69evR0gpOCZPnrzbsGHDaqwH7A/SBe2912RYHty/TUQeN8ZsTCQSz/W1JvT9WCx2mFLqECI6QUQ+dBzn1MbGRmxYXxYP3ec8Y8yDURT9DpO01pAxziMi/N1ERPeISBps2xjzSmVl5arW1lY0axYxs7IMfGEURc0AnohmKaUg/MHb7mbm1UEQXJn/AsgXyWTyeiKqEpF5URSFuF5bWzvGcRx0317F+xMRSCllMpkZLS0t0L9y7zeLiNbB4iMkOmYuF5E2Zj6tvb39o1GjRlU0NTUhJhYceBAz1+BHRLCyXOxHwvw3ET3qOM4f+xK9kNS2bNmyF657nncMES2zkgIqnY2FLC3/RXzfnyEicyzT7QHH9/25IgIAF7mu25zJZO6CZyLEEdHLlZWV86zV38TMCDGQvGeGYdhlLR5Wf74FfrmIrM7J2ig66uvrP7bV341EdIxSanGOb2itj1NKnQVDg7em02mEueGO45yew8D3/d+IyAxmTsDif09EcFPHGHNbFEX3e573SyI6kZnXGWPQwnumrxae3QA0vpFEuowxYTqd3rBu3br3C+1YdXV1ueM4h1o3PNAYM7ezs/Ol8vLyxcaYI5HDmbk+CAJ8XJ/Dhpo5RLQ2m83e4bouLBAxf7hS6vR0Op1xHOduIvqnMWa1iLzT1dX1HJKl7/sni0gd2pRhGAIgsjL3LGwm/mbmm4nogTAMF1lldS4RPRKG4b2e5yG2Q9Z4jZnR6uwWkQuYuVJEroyi6C7P8xYR0UlE1CIid9gCBd6YUkpdCouHQIYJL3Z0dPyioqLCTSaTeOG9bMWAhIjTAmvCMHy0LySqq6v3xKI5t+o9D0nadd1TiAiVw9ft9ZHGmDWwqtra2qMdx8HLYiwJgiDRH/C+7wMgALWOmWOIr8z8loisiKLoQUjXsVhsqeUk6JB94DjOhY2Njf/K6VPGmMsTicTTFvjfQnE1xpyhlIK+BLDuhOfZEIbwtX78+PEno2rSWp/LzD9FQrfJOM3MYWlp6dL6+vpu3/cnIF+IyBH2Oxz0pkXktjAMGyEZYPeuRvkUhuFF1u0hzcI9UUrB9fe0NP5OGIPWeqJS6u1cg6OfODwhk8nEmpubX7fA30pEBxJRruQqYeZ2Efm14zgZWK6IQKU8M4qit/oD3m7UUShLEa+NMfsopR7P9QxwL4zBdd3pSPLGmPdFZI0tXbm2tnay4zhbgiBAswcWD4M4kogest7/E2Z+CgaAbhszn4IwEkURcmHP8H3/+0R0sDHGUUq9EATBuvzIgG92HAfRYF8R2cbM64MgeLnHo+Lx+KhkMvkQET0WhuFiWJIx5iRm7gkVlsons9nsXNu4BvBITnsjBsZisScbGhp2ENhsCxGJBhwAnoJwho9DOILL5pIm8gGAviwMw82e590nIm9GUQTrG9Sjp473PO9qZv4AcqzWejEzH50HDpIuThBciCSE+VrrhSjJrLWivddqXR5aixaRg/Lq6iXIG7ivpqbmIKXUtZYLoAwFk9yNmZcHQbDW87wWZr4d/x7UqOcIlOd5h6GN197evq6srGy5TQQ9JaLtnf45v8rwff8SEUGI6kJowEkyEYGMiziGRjm0epAKVEsAtUfwmjZt2jeNMdeioYJ8YGt9dKXuD4LgVq31GbFYrKm3Bw3GTdiBuU6fPn1sOp2+hpn3yTVFAHzv0wKe56EWRWLZXmcjwUHUyXWlbMLDRlwVhuFjNuZWuK57nYggZ3TmTiMg8w/ZUwY2hKCSWWqttscicUwDcTq/vPM8D6CfTUTIA33JDiBR21zXnZOrY22yWcbMBxBRu7XkMSKyOYoiNGSGzNgBNMu+bjDGTLRnIhWAF5H6MAxvyqHieR5EnyVKKTTCdzj2kZtjPeUle8qgJzdY5RN173fygEfZtRb18pBBvZC1aq0nMTPIBWTbDy2AD0PYyQdGaw3PQI3aV4sOnSQ0NO7N3ZcPvIh0MDNOFmy2Z2r+O6SBt1XOoUSEliDAM8zcGATBdfnA+L5/pIjASqHqIZHmBuI8Nm1rJpOZk0+oIKWCLUImhUTMzM+kUqmL+2K5g3kj+pSFPc/7hohcxMzHExFCDU7+7jA8z4NCh2MhICE9a9kkO0opNb+pqWljr82Chd9uCRkqnZuLkbDBCn6/ejz6sd3d3fOVUnul0+lZLS0tuYTYg0dNTc04x3HARnFwKXdtd8vQ5vcGzR6IXTAUeqrFDKZoIwQLQNRPpVKvFwoJljZfJSKo3cFC33Jdd3ah4xm1tbXQpEsTiQQaBkN6fCLgiyHk+z40bDQl3gPDDYIAauaXox8EPhPgsb7W+gZ0e4IggJz65SiCwP8AEihQwx5Zb+0AAAAASUVORK5CYII="
+              alt="DEVN.CO"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="sponsors-controls-btns sponsors__btns">
+        <div class="sponsors-controls-btns__prev icon icon-left-open"></div>
+        <div class="sponsors-controls-btns__next icon icon-right-open"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+  <div class="container">
+    <nav class="directory footer__directory">
+      <div class="directory__column">
+        <a href="#" class="footer__logo link">
+          <div class="main-logo footer__main-logo">
+            <img
+              class="main-logo__img"
+              src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAAvCAMAAACMlYlIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACT1BMVEVhrOxirexire1hrez///9hrOxire1irexhrOxire1ire1hrOxirexhrOxhrOxire1hrOxhrOxhrOxhrOxhrexire1ire1ire1irexirexirexire1irexhrOxire1irexire1irexhrOxirexhrOxire1hrOxhrOxhrOxhrOxire1hrOxirexirexire1irexhrOxhrOxirexhrOxhrOxire1hrOxhrexire1hrOxire1ire1hrOxirexirexire1irexire1hrOxirexhrOxirexirexhrOxire1hrexhrOxhrOxirexirexhrOxirexhrexirexhrOxirexhrOxhrOxirexire1irexhrOxirexire1irexirexhrexhrOxire1hrOxirexhrexirexire1hrOxhrOxhrOxhrOxhrOxhrOxhrOxhrOxirexhrOxirexirexhrOxhrOxhrOxire1irexirexhrOxhrOxhrexire1hrOxhrOxirexire1hrOxhrOxire1hrOxhrOxhrOxhrOxirexhrOxirexirexirexhrOxire1hrOxirexirexirexhrOxire1irexhrexirexirexhrOxire1ire1irexhrOxhrOxhrOxhrOxire1hrOxhrOxhrOxirexirexire1hrOxhrOxirexhrOxire1irexirexhrOxhrOxhrOxhrOxirexire1ire1hrOxhrOxhrOxhrOxirexhrOxirexirexhrOxhrOxirexhrOxire1irexhrez///9tT6HzAAAAwHRSTlMAAAAAAB6687oe4Z06u7+/JfnvRLs89B/hDHnCw8PDuvO78/lB6/X36c2hdDUCu0vhgBMfS3sFSyDrMOoo1QqWHvwtv8YvdK9LtAr7tJaC9B8Gy9a0NP4d9c9juVhpZIjYL7L3HNHR5P4hDduZX4wasMxmAbLPHy79j7gCBsc+/YWK5QKpkEx6KdtoHRy08BCK+vrZBCH3gd0JKvAJCN44Qvh4aUTuEbNwKteHIFaD9hsZfpcDOX2x1vvy5MeTXhZkPCxGAAAAAWJLR0QEj2jZUQAAAAd0SU1FB+QEFg4bI8A8ylUAAASpSURBVEjHhVYHe1RFFJ2ZR0wiLhrFnt1AoibYAFk7agQLTVFR7L0EK4pdUazYu9ixY1fsvdyZ+WPec+4sIRJf3pfd7Hsz595z25nnunbq7ul1znknUUQivlKyz87TdwlYwXIIVQj6G3feexf044Nr6PYZFTalqAYAjHHc0q676fagu3VDKLbsTh/rp1v391WwB0wCPqeY4B1fafc9gm1UdPB0773dwcZMxcxQFsEliUTrX5Qs5af07WkIZRgq5etJwRebXY29GnvDmDffyWgzEnhPss++xtiC8AaEFYZvZnxVMmJG9af+j5bB/Sq4tmANqbcVuDg3reYyCnF/c8EKOF8Sx4B8LdwikX7foeS2+2dJqIVbCZtBExYKAkQYpXIPhbxZZeDFA8lpKVD8Ftum8K/Gc+A6sYfegVkDvVj3WnM0T4RjgJV/03d8Mwm8MXRV4LNZfXhWODtPhHHjalrdKgvajPiSSiM/qBuHaDBl9o0BrRGa2B4OOPCg4ZE5Bx9y6GFqqDRygfvD0fnklAyXbG74o8mo5iaMhD6cN/8IJo+JMu/aezMXcK7gmcDMqmF/i8G2kQvyirOOPKrTiBa7s1lkTUrr6WIyKk2m+WjpXPp0zjElF3V1R9WVcJN+2mAepXA69jhr36m6Toemn0TbImWQOEzHL2QC6uCZQ6/k0XZt6EiUDl5OOHFb19mFYQ6+KsXVNNr4a+ZBtM2sRfYTQzjJTZw439sz2DPK8jFDMSf66WentksjQUqQhXTyookj4xracospA0Ws2LgYGd04N+ZTFp562jzZ1o+n/wc+qJyGWDUxxUwUjBaruCTKUiWxbDqCyMAvH51APjRiyouhW456pXqXNYDY5Li2k6yoMOxnRCteTmeGCd5HZ69snMX+MZmE4krM2jaq8UuyrOC4nH1O6R1ZNRGOwaTolfFW4mDRb00b5VyoRAjnrS6zmM6fouvIoUUR0bpfcOFFlKqLO8fIJVN0HZu+6auAzCOaS0HtsmiG5fL6rhMeHS141K5DGa9AaFeaJCS5akd4OQ5I3jJoctFmIFcjDdd0FO3aSeBdA4MDXa7Ejhiv4yS3eeSMwfYi1k1yHtkRHnjm8nkRnjXXQ55uuBH5vglpvJm+tSrDk3gf1KWhAo8xK4VbeLquvXXktnW3Q6TuYNeqgTsngVN1Q8k8GjcN32WHu6ZtmsLvvqccvuneyWJvrGwssNjLIZfuu187CjqG9fUP4JGA1oM1hfNhgwm++n+onFCAPyxsek3kI4/Wwd1jyd5U1Mbj60E/wP1GK4iKwRO+Fv7k8nHJf+rpZ5xb+ywWnjMVSc+/UKe0mqgX6b0IRHrpZXnlVV3Y9BoeZ3ndV7Xe/bJVJowxc/g05nVYmU9zb7xZe76jUG+9XV7zypeMvaMrm99Vk33vBVdHniP//gcd6tFO3Q+xtFHSmo+cm8q7jtrH3Xa4ZDsd0pZPsPbp6s94nNXGjteP8PkXYm+J5WX1S6x99TXfD6pa8jxGq83fbOWrprCB09ZvS15dfezUzEoZhO++H6M2U/vzD2Z7u7eL/yucvcTquP3408+//Lrlt9//+POvv//xZhxr/wIoYgRUXtVDEwAAAABJRU5ErkJggg=="
+              alt="BHOST"
+            />
+            <span class="main-logo__company-name">
+              BHOST
+            </span>
+          </div>
+        </a>
+        <div class="directory__address directory__text">
+          Road No- 6, House- 25/A Dreamland Tower, Mancity.
+        </div>
+        <h5 class="directory__title">Follow Us</h5>
+        <div class="footer-social footer__footer-social">
+          <a class="footer-social__icon icon icon-facebook link" href="#"></a>
+          <a
+            class="footer-social__icon icon icon-pinterest-circled link"
+            href="#"
+          ></a>
+          <a class="footer-social__icon icon icon-instagram link" href="#"></a>
+          <a class="footer-social__icon icon icon-twitter link" href="#"></a>
+          <a class="footer-social__icon icon icon-gplus link" href="#"></a>
+        </div>
+      </div>
+      <div class="directory__column">
+        <input
+          class="directory__input"
+          type="checkbox"
+          name="footer-spoiler"
+          id="footer-tab-1"
+          value=""
+        />
+        <div class="footer-section directory__footer-section">
+          <h5 class="footer-section__title">
+            <label class="footer-section__label" for="footer-tab-1">
+              Contact
+            </label>
+          </h5>
+
+          <div class="footer-section__content">
+            <p class="footer-section__text footer-section__text_narrow">
+              Phone: +91 254 541 254
+            </p>
+            <p class="footer-section__text">
+              Fax : +44 161 999 8888
+            </p>
+            <p class="footer-section__text footer-section__text_narrow">
+              Email: <br class="footer-section__br" />
+              dreamland@dream.com
+            </p>
+          </div>
+        </div>
+        <input
+          class="directory__input"
+          type="checkbox"
+          name="footer-spoiler"
+          id="footer-tab-2"
+          value=""
+        />
+        <div class="footer-section directory__footer-section">
+          <h5 class="footer-section__title">
+            <label class="footer-section__label" for="footer-tab-2">
+              Help
+            </label>
+          </h5>
+          <div class="footer-section__content">
+            <a href="#FAQ" class="footer-section__link link">Help center</a>
+            <a href="#sponsors" class="footer-section__link link"
+              >Item support</a
+            >
+            <a href="#review" class="footer-section__link link"
+              >Customer refunds</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="directory__column">
+        <input
+          class="directory__input"
+          type="checkbox"
+          name="footer-spoiler"
+          id="footer-tab-3"
+          value=""
+        />
+        <div class="footer-section directory__footer-section">
+          <h5 class="footer-section__title">
+            <label class="footer-section__label" for="footer-tab-3">
+              Opening Hours
+            </label>
+          </h5>
+          <div class="footer-section__content">
+            <p class="footer-section__text footer-section__text_narrow">
+              Monday to Friday
+              <span class="footer-section__time">8 am - 12 pm </span>
+            </p>
+            <p class="footer-section__text footer-section__text_narrow">
+              Saturday to Sunday
+              <span class="footer-section__time">12 pm - 6 pm</span>
+            </p>
+            <p class="footer-section__text footer-section__text_narrow">
+              Open 24 Hours in Online
+            </p>
+          </div>
+        </div>
+        <input
+          class="directory__input"
+          type="checkbox"
+          name="footer-spoiler"
+          id="footer-tab-4"
+          value=""
+        />
+        <div class="footer-section directory__footer-section">
+          <h5 class="footer-section__title">
+            <label class="footer-section__label" for="footer-tab-4">
+              Our Commuinity
+            </label>
+          </h5>
+          <div class="footer-section__content">
+            <a href="#blog" class="footer-section__link link">Forums</a>
+            <a href="#blog" class="footer-section__link link">Community hub</a>
+            <a href="#review" class="footer-section__link link">Meetup</a>
+          </div>
+        </div>
+      </div>
+      <div class="directory__column">
+        <input
+          class="directory__input"
+          type="checkbox"
+          name="footer-spoiler"
+          id="footer-tab-5"
+          value=""
+        />
+        <div class="footer-section directory__footer-section">
+          <h5 class="footer-section__title">
+            <label class="footer-section__label" for="footer-tab-5">
+              Important links
+            </label>
+          </h5>
+          <div class="footer-section__content">
+            <a
+              href="#header"
+              class="footer-section__link footer-section__link_inline link"
+              >Home</a
+            >
+            <a
+              href="#search"
+              class="footer-section__link footer-section__link_inline link"
+              >Search Domain</a
+            >
+            <a
+              href="#header"
+              class="footer-section__link footer-section__link_inline link"
+              >Menu</a
+            >
+            <a
+              href="#blog"
+              class="footer-section__link footer-section__link_inline link"
+              >Upcoming Event</a
+            >
+            <a
+              href="#about"
+              class="footer-section__link footer-section__link_inline link"
+              >About</a
+            >
+            <a
+              href="#subscribe"
+              class="footer-section__link footer-section__link_inline link"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <input
+          class="directory__input"
+          type="checkbox"
+          name="footer-spoiler"
+          id="footer-tab-6"
+          value=""
+        />
+        <div class="footer-section directory__footer-section">
+          <h5 class="footer-section__title">
+            <label class="footer-section__label" for="footer-tab-6">
+              Company
+            </label>
+          </h5>
+          <div class="footer-section__content">
+            <a href="#review" class="footer-section__link link">Terms</a>
+            <a href="#" class="footer-section__link link">Licenses</a>
+            <a href="#" class="footer-section__link link"
+              >Become an affiliate</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="footer-legal">
+      <div class="footer-legal__copyright">
+        &#169; 2017 Roy Design. All rights reserved.
+      </div>
+      <div class="footer-legal__link-list">
+        <a href="#about" class="footer-legal__link link">About&nbsp;Bhost</a>
+        <a href="#" class="footer-legal__link link">Privacy&nbsp;Policy</a>
+        <a href="#" class="footer-legal__link link">Help&nbsp;Center</a>
+        <a href="#" class="footer-legal__link link">Terms</a>
+        <a href="#" class="footer-legal__link link">Site&nbsp;Map</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <a href="#" class="to-top icon link icon-left-open"></a>
+
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
+
+
