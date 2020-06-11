@@ -108,7 +108,6 @@ body {
   &-gplus:before { content: '\f0d5'; } /* '' */
 }
 
-// возможно, отступы нужно сделать в em
 .button {
   background-color: $accent-color;
   color: #fff;
@@ -164,7 +163,6 @@ h4,
 h5 {
   line-height: 1;
   margin-top: 0;
-  // возможно, отступ снизу нужно сделать в em
   margin-bottom: 15px;
   text-transform: uppercase;
 }
